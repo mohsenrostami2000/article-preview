@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Manrope:wght@500;700&family=Montserrat&family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto+Mono&family=Rubik:wght@300&family=Vina+Sans&family=Work+Sans:wght@400;600;700&display=swap');
+
+/* reset -------------------------------------------- */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+}
+
+/* variables ------------------------------------*/
+:root {
+    --very-dark-blue: hsl(217, 19%, 35%);
+    --dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* maine style ------------------------------------ */
+body {
+    background-color: var(--light-grayish-blue);
+}
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1rem 1.1rem;
+    color: var(--very-dark-blue);
+}
+
+h4 {
+    color: var(--very-dark-blue);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 1.1rem;
+    color: var(--grayish-blue);
+}
+.container {
+    max-width: 88%;
+    text-align: left;
+    margin: 10% auto;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.share-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    margin-top: .5rem;
+}
+
+.share-container .person-pic {
+    border-radius: 50%;
+}
+
+#share {
+    background-color: var(--light-grayish-blue);
+    padding: 8px;
+    border-radius: 50%;
+    
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info p, 
+.info h4 {
+    margin-left: -2rem;
+}
+
+
+.social-info {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 1rem;
+}
+
+.social-info h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: var(--grayish-blue);
+}
+
+.social-info #share {
+    background-color: var(--grayish-blue);
+    
+}
+
+.social-info .links  {
+    margin-left: -2rem;
+      
+}
+
+.links a {
+    padding: 0 .25rem ;
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+    position: sticky;
+    margin-bottom: 10px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
