@@ -20,6 +20,7 @@
 /* maine style ------------------------------------ */
 body {
     background-color: var(--light-grayish-blue);
+    
 }
 h1 {
     font-size: 18px;
@@ -38,6 +39,8 @@ p {
     margin: 0 1.1rem;
     color: var(--grayish-blue);
 }
+
+/* maine container ------------------------------------------------------------- */
 .container {
     width: 88%;
     max-width: 430px;
@@ -49,6 +52,7 @@ p {
     
 }
 
+/* share container ------------------------------------------------------------- */
 .share-container {
     display: flex;
     justify-content: space-between;
@@ -61,14 +65,36 @@ p {
 .share-container .person-pic {
     border-radius: 50%;
 }
+/* profile container --------------------------------------------------------- */
+.person {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: -10px;
+}
 
+.person p {
+    margin-left: 0;
+}
+
+.profile {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* shate btn ------------------------------------------ */
 #share {
     background-color: var(--light-grayish-blue);
     padding: 8px;
     border-radius: 50%;
-    
 }
 
+#share:hover{
+    cursor: pointer;
+}
 .image img {
     max-width: 100%;
     border-radius: 10px 10px 0 0;
@@ -111,17 +137,9 @@ p {
     padding: 0 .25rem ;
 }
 
-.profile {
-    display: flex;
-    column-gap: 1rem;
-    text-align: left;
+.social-medias {
+    display: none;
 }
-
-.profile p {
-    margin-left: 0;
-
-}
-
 
 
 .attribution {
@@ -132,7 +150,18 @@ p {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+ /* ============================================ test ======= */
+.desktop-links {
+    display: none;
+}
 
+.profile {
+    display: none;
+}
+
+.social-medias {
+    display: block;
+}
 
 /* screens more than 475px ---------------------------------------- */
 
@@ -224,7 +253,17 @@ p {
     right: 21.5px;
     z-index: -1;
   }
-  /* slider ------------------------ */
+
+  .profile {
+    display: flex;
+  }
+
+  .desktop-links {
+    display: none;
+    transform: translateY(-5px);
+    transition-duration: .5s;
+  }
+
 }
 
 
