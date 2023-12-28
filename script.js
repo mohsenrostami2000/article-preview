@@ -22,3 +22,15 @@ shareBtnTwo.addEventListener('click', () => {
     profile.classList.toggle('in-active');
 });
 
+window.addEventListener('resize', e => {
+    if(window.innerWidth <= 1000 && desktopLinks.classList.contains('active')) {
+      desktopLinks.classList.toggle('active')
+      phoneLinks.classList.toggle('active');
+      profile.classList.toggle('in-active');
+    } 
+    else if (window.innerWidth > 1000 && phoneLinks.classList.contains('active')) {      
+      desktopLinks.classList.toggle('active')
+      phoneLinks.classList.toggle('active');
+      profile.classList.toggle('in-active');
+    }
+  });
