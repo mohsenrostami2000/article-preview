@@ -86,13 +86,14 @@ p {
 }
 
 /* shate btn ------------------------------------------ */
-#share {
+#share , .share2 {
     background-color: var(--light-grayish-blue);
     padding: 8px;
     border-radius: 50%;
 }
 
-#share:hover{
+#share:hover , 
+.share2 {
     cursor: pointer;
 }
 .image img {
@@ -149,18 +150,30 @@ p {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: black;
 }
  /* ============================================ test ======= */
 .desktop-links {
     display: none;
 }
 
-.profile {
+/* .profile {
+    display: block;
+} */
+
+/* .social-medias {
     display: none;
+} */
+
+/* clsasses for JavaScript -------------------------- */
+
+.active {
+    display: block;
 }
 
-.social-medias {
-    display: block;
+.in-active {
+    display: none;
 }
 
 /* screens more than 475px ---------------------------------------- */
@@ -184,7 +197,6 @@ p {
 }
 
 @media (min-width: 1000px) {
-    
     .container {
         display: flex;
         min-width: 750px;
@@ -204,7 +216,7 @@ p {
         border-radius: 10px 0 0 10px;
     }
 
-  .image img {
+    .image img {
     display: none;
   }
 
@@ -264,6 +276,9 @@ p {
     transition-duration: .5s;
   }
 
+  .active {
+    display: block;
+  }
 }
 
 
